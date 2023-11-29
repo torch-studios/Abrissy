@@ -30,6 +30,7 @@ echo [35m[[0m[37m-wm[0m[35m][0m [95mSend Discord webhook message.[0m
 echo [35m[[0m[37m-wr[0m[35m][0m [95mRemove Discord webhook.[0m
 echo [35m[[0m[37m-ws[0m[35m][0m [95mSpam webhook[0m
 echo [35m[[0m[37m-l7[0m[35m][0m [95mSend DDoS Attack to website[0m
+echo [35m[[0m[37m-pw[0m[35m][0m [95mGet website IP Adress[0m
 echo _________________________________________________________________________________________
 echo.
 echo [35m[[0m[37m-credits[0m[35m][0m [95mThis command shown informations about tool[0m
