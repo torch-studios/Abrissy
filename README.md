@@ -1,9 +1,20 @@
 # Abrissy Multitool 
-![image](https://github.com/torch-studios/Abrissy/assets/131596876/5a9dfa3b-3d0f-4991-b67a-b2336a538ddf)
+![image](https://github.com/torch-studios/Abrissy/assets/131596876/a002ab75-607e-4af4-bac2-7b574d9dd2f3)
 # Requirements 
 - Python
 - Windows 10/11
-
+# Features 
+[-ws] Scan wifi networks
+[-l7] Send DDoS Attack to website
+[-pw] Get website IP Adress
+[-il] Get informations about IP Adress
+[-st] check speedtest
+DISCORD INTEGRATIONS
+[-wm] Send Discord webhook message.
+[-wr] Remove Discord webhook.
+[-ws] Spam webhook
+OTHER
+[-credits] This command shown informations about tool
 # Usage 
 - Launch cmd in Abrissy Multitool files directory
 - Type "abrissy.cmd -h" in cmd
