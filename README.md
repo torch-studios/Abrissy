@@ -5,15 +5,25 @@
 - Windows 10/11
 # Features 
 [-ws] Scan wifi networks
+
 [-l7] Send DDoS Attack to website
+
 [-pw] Get website IP Adress
+
 [-il] Get informations about IP Adress
+
 [-st] check speedtest
+
 DISCORD INTEGRATIONS
+
 [-wm] Send Discord webhook message.
+
 [-wr] Remove Discord webhook.
+
 [-ws] Spam webhook
+
 OTHER
+
 [-credits] This command shown informations about tool
 # Usage 
 - Launch cmd in Abrissy Multitool files directory
