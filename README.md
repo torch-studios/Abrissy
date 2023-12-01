@@ -27,5 +27,7 @@ OTHER
 [-credits] This command shown informations about tool
 # Usage 
 git clone https://github.com/torch-studios/Abrissy
+
 cd Abrissy
+
 abrissy.cmd -h 
