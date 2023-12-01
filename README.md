@@ -26,6 +26,6 @@ OTHER
 
 [-credits] This command shown informations about tool
 # Usage 
-- Launch cmd in Abrissy Multitool files directory
-- Type "abrissy.cmd -h" in cmd
-- Enjoy
+git clone https://github.com/torch-studios/Abrissy
+cd Abrissy
+abrissy.cmd -h 
