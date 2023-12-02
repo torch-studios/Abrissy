@@ -1,5 +1,5 @@
 # Abrissy Multitool 
-![image](https://github.com/torch-studios/Abrissy/assets/131596876/794d34ab-a6dd-405b-b471-969a18971ba2)
+![image](https://github.com/torch-studios/Abrissy/assets/131596876/ce74a640-d40b-4a84-9c93-d2a0ab541758)
 # Requirements 
 - Python
 - Windows 10/11
