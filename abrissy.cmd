@@ -20,6 +20,7 @@ if "%arg%"=="-st" goto :speedtest
 if "%arg%"=="-install-req" setup.bat
 if "%arg%"=="-pr" goto :proxy
 if "%arg%"=="-pd" goto :disconnect-proxy
+if "%arg%"=="-tl" goto :tokenlookup
 
 echo 
 goto :end
@@ -41,6 +42,7 @@ echo [35m[[0m[37m-st[0m[35m][0m [95mcheck speedtest[0m
 echo [35m[[0m[37m-pr[0m[35m][0m [95mConnect to custom proxy HTTP/HTTPS/SOCKS4/SOCKS5[0m
 echo [35m[[0m[37m-pd[0m[35m][0m [95mDisconnect from connected proxy[0m
 echo DISCORD INTEGRATIONS 
+echo [35m[[0m[37m-tl[0m[35m][0m [95mDiscord Token info (LookUp)[0m
 echo [35m[[0m[37m-wm[0m[35m][0m [95mSend Discord webhook message.[0m
 echo [35m[[0m[37m-wr[0m[35m][0m [95mRemove Discord webhook.[0m
 echo [35m[[0m[37m-ws[0m[35m][0m [95mSpam webhook[0m
@@ -134,6 +136,13 @@ goto end
 :credits 
 echo [37m[[0m[95mABRISSY[0m[37m][0m [36mThis tool was made by dc: abrissy / https://discord.gg/eWjJdFVf[0m
 
+:tokenlookup
+cd tL 
+echo [37m[[0m[95mABRISSY[0m[37m][0m [36mLaunching Abrissy Token Lookup[0m
+timeout 1 >nul
+start tl.html 
+cd..
+goto end 
 :end
 endlocal
 
