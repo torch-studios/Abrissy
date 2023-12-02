@@ -18,6 +18,8 @@ if "%arg%"=="-il" goto :iplookup
 if "%arg%"=="-ws" goto :wifi-scan
 if "%arg%"=="-st" goto :speedtest
 if "%arg%"=="-install-req" setup.bat
+if "%arg%"=="-pr" goto :proxy
+if "%arg%"=="-pd" goto :disconnect-proxy
 
 echo 
 goto :end
@@ -36,6 +38,8 @@ echo [35m[[0m[37m-l7[0m[35m][0m [95mSend DDoS Attack to website[0m
 echo [35m[[0m[37m-pw[0m[35m][0m [95mGet website IP Adress[0m
 echo [35m[[0m[37m-il[0m[35m][0m [95mGet informations about IP Adress[0m
 echo [35m[[0m[37m-st[0m[35m][0m [95mcheck speedtest[0m
+echo [35m[[0m[37m-pr[0m[35m][0m [95mConnect to custom proxy HTTP/HTTPS/SOCKS4/SOCKS5[0m
+echo [35m[[0m[37m-pd[0m[35m][0m [95mDisconnect from connected proxy[0m
 echo DISCORD INTEGRATIONS 
 echo [35m[[0m[37m-wm[0m[35m][0m [95mSend Discord webhook message.[0m
 echo [35m[[0m[37m-wr[0m[35m][0m [95mRemove Discord webhook.[0m
@@ -104,6 +108,22 @@ echo [37m[[0m[95mABRISSY[0m[37m][0m [36mEnter user IP. [0m
 set /p "ip=>[95m"[0m
 echo [37m[[0m[95mABRISSY[0m[37m][0m [36mDetecing...[0m
 curl ipinfo.io/%ip%?token=7ac6b2bcbf4dae
+goto end 
+
+:proxy 
+echo [37m[[0m[95mABRISSY[0m[37m][0m [36mWARNING: Command prompt must be launched as administrator to use [0m
+echo [36mcustom proxy [0m
+echo [37m[[0m[95mABRISSY[0m[37m][0m [36mEnter Adress+Port [0m
+set /p "prox=>[95m"[0m
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 1 /f
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer /t REG_SZ /d "%prox%" /f 
+echo [37m[[0m[95mABRISSY[0m[37m][0m [36mConnected to %prox%[0m
+goto end 
+
+:disconnect-proxy 
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyServer /t REG_SZ /d "" /f 
+reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyDisable /t REG_DWORD /d 1 /f
+echo [37m[[0m[95mABRISSY[0m[37m][0m [36mDisconnected[0m
 goto end 
 
 :speedtest 
