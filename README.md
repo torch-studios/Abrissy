@@ -4,24 +4,27 @@
 - Python
 - Windows 10/11
 # Features 
-[-ws] Scan wifi networks
+- Scan wifi networks
 
-[-l7] Send DDoS Attack to website
+- Layer7 ddos
 
-[-pw] Get website IP Adress
+- get website ip adress
 
-[-il] Get informations about IP Adress
+- iplookup
 
-[-st] check speedtest
+- ethernet speedtest
 
-DISCORD INTEGRATIONS
+- connect to proxy HTTP/HTTPS/SOCKS4/SOCKS5
 
-[-wm] Send Discord webhook message.
+- disconnect proxy
 
-[-wr] Remove Discord webhook.
+- discord token info (loopkup)
 
-[-ws] Spam webhook
+- webhook spammer
 
+- webhook remover
+
+- webhook messager
 OTHER
 
 [-credits] This command shown informations about tool
