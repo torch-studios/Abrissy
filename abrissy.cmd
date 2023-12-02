@@ -134,8 +134,11 @@ st.cmd
 netsh wlan show networks mode=bssid
 goto end
 :credits 
-echo [37m[[0m[95mABRISSY[0m[37m][0m [36mThis tool was made by dc: abrissy / https://discord.gg/eWjJdFVf[0m
-
+echo [36mThis tool was made by dc: abrissy[0m
+echo [95mMONERO[0m: [36m48z3avaJH374ckT9YxogPm4Q5nDvhz8oxE8nuuuXtJTU88sbyhKuMJqema5i9bd5HM5fN3ruP2Ch5QgjsGyv7CQp3KEHpaH[0m
+echo [95mDISCORD[0m: [36mhttps://discord.gg/eWjJdFVf[0m
+echo [95mHall Of Autism[0m: [36mhttps://torch-studios.github.io/hoa/HOA.html[0m
+goto end 
 :tokenlookup
 cd tL 
 echo [37m[[0m[95mABRISSY[0m[37m][0m [36mLaunching Abrissy Token Lookup[0m
